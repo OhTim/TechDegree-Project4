@@ -1,0 +1,45 @@
+/*---------- Base Styles ----------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/*----- Styles -----*/
+
+
+li {
+  display: inline-block;
+  width: 20%;
+  margin: 2.5%;
+  padding: 0;
+}
+
+img {
+  padding: 0;
+}
+
+
+
+/*-- Classes --*/
+.container {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/*--Selectors--*/
+
+input[type="search"] {
+  margin-top: 50px;
+  width: 50%;
+  height: 35px;
+}

@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -23,9 +24,39 @@ li {
   padding: 0;
 }
 
+.lb-data .lb-details {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.lb-data .lb-close {
+  display: none;
+}
+
+.lb-data h1 {
+  font-size: 2.5em;
+  color: white;
+}
+
+.lb-data p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 2em;
+  margin-top: 35px;
+  line-height: 1.5em;
+  color: white;
+}
+
+.lightbox .lb-image {
+  border: none;
+}
+
+
 img {
   padding: 0;
 }
+
 
 
 
@@ -36,6 +67,9 @@ img {
   margin: auto;
 }
 
+
+
+
 /*--Selectors--*/
 
 input[type="search"] {
@@ -43,3 +77,12 @@ input[type="search"] {
   width: 50%;
   height: 35px;
 }
+
+/* TO DO
+
+Fix Layout display (4x3)
+Move buttons to right of image
+Add Search plugin & function
+Add footer
+
+*/

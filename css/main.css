@@ -14,24 +14,43 @@ ul {
   list-style: none;
 }
 
-/*----- Styles -----*/
-
-
 li {
   display: inline-block;
-  width: 20%;
-  margin: 2.5% 2.39%;
+  min-width: 20%;
+  margin: 2.5% 2.3%;
   padding: 0;
 }
 
-.lb-data .lb-details {
-  width: 100%;
+footer {
+  margin-top: 30px;
+}
+
+/*----- Styles -----*/
+/*--Container--*/
+
+.container {
+  max-width: 1100px;
   text-align: center;
   margin: auto;
 }
 
-.lb-data .lb-close {
-  display: none;
+/*--Lightbox--*/
+
+.lightbox .lb-image {
+  border: none;
+}
+
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next {
+  opacity: 1;
+}
+
+
+/*Description*/
+.lb-data .lb-details {
+  width: 100%;
+  text-align: center;
+  margin: auto;
 }
 
 .lb-data h1 {
@@ -48,37 +67,56 @@ li {
   color: white;
 }
 
-.lightbox .lb-image {
-  border: none;
+.lb-data .lb-close {
+  display: none;
 }
 
-
-
-
-
-/*-- Classes --*/
-.container {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
-
-
-
-
-/*--Selectors--*/
+/*----Selectors----*/
 
 input[type="search"] {
-  margin-top: 30px;
-  width: 50%;
-  height: 40px;
+  width: 80%;
+  max-width: 500px;
+  height: 45px;
+  margin: 30px auto 0;
+  border: 2px solid #ccc;
 }
 
-/* TO DO
 
-Fix Layout display (4x3)
-Move buttons to right of image
+/* TO DO
+\
+
 Add Search plugin & function
-Add footer
 
 */
+
+/*--Placeholder---*/
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  padding-left: 10px;
+  font-size: 1.15em;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  padding-left: 10px;
+  font-size: 1.15em;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  padding-left: 10px;
+  font-size: 1.15em;
+}
+:-moz-placeholder { /* Firefox 18- */
+  padding-left: 10px;
+  font-size: 1.15em;
+}
+
+/*----Media Queries----*/
+
+@media (min-width: 900px) {
+  .lb-nav a.lb-next {
+  position: absolute;
+  right: -100px;
+}
+.lb-nav a.lb-prev {
+  position: absolute;
+  left: -100px;
+}
+}

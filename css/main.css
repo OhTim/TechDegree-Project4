@@ -5,7 +5,6 @@
 }
 
 body {
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,24 +14,29 @@ ul {
 }
 
 li {
-  display: inline-block;
-  min-width: 20%;
-  margin: 2.5% 2.3%;
-  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer {
-  margin-top: 30px;
+  padding-top: 30px;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
 }
 
 /*----- Styles -----*/
 /*--Container--*/
 
 .container {
+  padding: 0 2em;
   max-width: 1100px;
   text-align: center;
   margin: auto;
 }
+
 
 /*--Lightbox--*/
 
@@ -46,7 +50,7 @@ footer {
 }
 
 
-/*Description*/
+/*Lightbox Description*/
 .lb-data .lb-details {
   width: 100%;
   text-align: center;
@@ -82,12 +86,6 @@ input[type="search"] {
 }
 
 
-/* TO DO
-\
-
-Add Search plugin & function
-
-*/
 
 /*--Placeholder---*/
 
@@ -109,14 +107,36 @@ Add Search plugin & function
 }
 
 /*----Media Queries----*/
+/* 480 Pixels */
+@media (min-width: 480px) {
+  li {
+    float: left;
+    width: 46%;
+    margin: 2%;
+  }
+}
 
+/* 600 Pixels */
+@media (min-width: 600px) {
+  li {
+    width: 29.333%;
+  }
+}
+
+
+/* 900 Pixels */
 @media (min-width: 900px) {
+   li {
+    width: 21%;
+  }
+
+  /* Lightbox */
   .lb-nav a.lb-next {
   position: absolute;
   right: -100px;
-}
-.lb-nav a.lb-prev {
+  }
+  .lb-nav a.lb-prev {
   position: absolute;
   left: -100px;
-}
+  }
 }
